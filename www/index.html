@@ -10,87 +10,62 @@
 </head>
 
 <body>
-    <div id="skrollr-body">
-        <div class="container" data-0="background:rgb(142, 186, 222);" data-1000="background:rgb(142, 186, 222);" data-1100="background:rgb(74, 74, 74);" data-2100="background:rgb(74, 74, 74);" data-2200="background:rgb(53, 66, 80);" data-3200="background:rgb(53, 66, 80);">
-            <nav>
-            </nav>
+    <header></header>
 
-            <!--------------SZENE1 ---------------------------->
-            <div class="scene" data-0="top: 0%" data-1000="top: 0%" data-1100="top: -100%; display: block;" data-1101="display: none;">
-            </div>
-
-            <div class="scene" data-0="display:none;" data-1000="display:block; top: 100%" data-1100="top: 0%;" data-2100="top: 0%;" data-2200="top: -100%; display: block;" data-2201="display: none;">
-                <div class="info" style="top:100px" data-600="opacity:0" data-1300="opacity:1">Hier steht ein Beschreibungstext</div>
-            </div>
-
-            <!--------------SZENE3 ---------------------------->
-            <div class="scene" data-0="display:none;" data-2100="display:block; top: 100%" data-2200="top: 0%" data-3200="top: 0%" data-3300="top: -100%; display: block;" data-3301="display: none;" style="overflow: hidden;">
-                <img src="./img/space-stars.png" style="top: 100px; height:400px; left: 500px;" />
-                <img src="./img/planet-earth.png" data-2100="height: 200px; top: 400px; left: 700px;" data-2700="height: 50px; top: 450px; left: 850px;" />
-
-                <!-- <img src="./img/sun.png" data-2100="height: 100px; top: 400px; left: 800px;" data-2700="height: 200px; top: 200px; left: 850px;"/> -->
-
-                <img src="./img/sun.png" data-2100="height: 25px; top: 50px; left: 900px;" data-2500="height: 200px; top: 200px; left: 850px;" data-2800="height: 100px; top: 300px; left: 850px;" />
-                <img src="./img/saturn.png" data-2600="height: 25px; top: 10px; left: 900px;" data-2800="height: 200px; top: 200px; left: 850px;" />
-                <img src="./img/spaceship.png" data-2100="height: 100px; top: 400px; left: 800px;" data-2700="height: 200px; top: 200px; left: 850px;" />
-                <div class="info" style="top:100px" data-1400="opacity:0" data-1900="opacity:1">Hier steht ein Beschreibungstext</div>
-            </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDetail()">&times;</a>
+        <div class="overlay-content">
+            <img id="detailImage">
         </div>
-        <!-- Container -->
     </div>
-    <!-- Skrollr Body -->
-    <!-- Scripts -->
+
+    <div id="container">
+
+        <div class="bg" style="background-image: url(img/11072.jpg);" id="slide-1" data-0="transform:translate3d(0%,0%,0); opacity:1" data-1000="transform:translate3d(-100%,0%,0); opacity:0">
+        </div>
+
+        <div class="bg" style="background-image: url(img/2168.jpg);" id="slide-2" data-0="transform:translate3d(100%,0%,0); opacity:0" data-1000="transform:translate3d(0%,0%,0);opacity:1" data-2000="transform:translate3d(-100%,0%,0);opacity:0">
+        </div>
+
+        <div class="bg" style="background-image: url(img/1813.jpg);" id="slide-3" data-1000="transform:translate3d(100%,0%,0); opacity:0" data-2000="transform:translate3d(0%,0%,0); opacity:1" data-3000="transform:translate3d(-100%,0%,0);opacity:0">
+        </div>
+        <!-- <div class="bg" style="background-color:blue" data-2000="transform:translate3d(100%,0%,0); opacity:0" data-3000="transform:translate3d(0%,0%,0); opacity:1">
+            <h2>Quellen</h2>
+            <a href='https://www.freepik.com/vectors/people'>People vector created by prostockstudio - www.freepik.com</a> https://keithclark.co.uk/articles/practical-css-parallax/horizontal-scroll/#slide-6
+
+        </div> -->
+    </div>
+
+    <footer>
+        <nav>
+            <ul class="nav">
+                <li><a href="#slide-1">Slide 1</a></li>
+                <li><a href="#slide-2">Slide 2</a></li>
+                <li><a href="#slide-3">Slide 3</a></li>
+                <li><a href="#slide-4">Slide 4</a></li>
+                <li><a href="#slide-5">Slide 5</a></li>
+                <li><a href="#slide-6">Slide 6</a></li>
+            </ul>
+        </nav>
+    </footer>
 
     <script type="text/javascript">
         $(document).ready(function() {
-            // Loading screen
-            $(window).load(function() {
-                show();
-            });
-
-            function show() {
-                $(".loading").hide();
-                $(".container").fadeIn();
-            }
-
-            // Initialise Skrollr
             skrollr.init({
                 smoothScrolling: true,
                 scale: 2,
                 easing: "swing"
             });
-
-            // Scroll message at start
-            $(".scroll-message").hide();
-            $(".scroll-message")
-                .delay(3000)
-                .fadeIn(500);
-
-            // ScrollTo Navigation
-            var slideTopPosisition = [
-                0,
-                2535,
-                7701
-            ];
-
-            var animateScrollNext = function(duration) {
-                $("html, body").animate({
-                        scrollTop: slideTopPosisition[currentSlide + 1]
-                    },
-                    duration
-                );
-            };
-
-            // Back to top button
-            $(".back-to-top").on("click", function() {
-                $("html, body").animate({
-                        scrollTop: 0
-                    },
-                    5000
-                );
-                currentSlide = 0;
-            });
         });
+
+        function openDetail(image) {
+            document.getElementById("detailImage").src = image;
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeDetail() {
+            document.getElementById("myNav").style.width = "0%";
+        }
     </script>
 </body>
 
