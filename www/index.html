@@ -11,43 +11,23 @@
 
 <body>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeDetail()">&times;</a>
-        <div class="overlay-content">
-            <img id="detailImage">
-        </div>
-    </div>
 
     <div id="container">
-
-        <div class="bg" style="background-image: url(img/11072.jpg);" id="slide-1" data-0="transform:translate3d(0%,0%,0); opacity:1" data-1000="transform:translate3d(-100%,0%,0); opacity:0">
-
+        <div class="scene" id="newspaper" data-0="transform:translate3d(0%,0%,0); opacity:1" data-1000="transform:translate3d(-100%,0,0); opacity:0">
+            <img src="img/newspaper_bg.jpg" style="position: relative;">
+            <img src="img/museum.jpg" style="position:absolute; top:300px; left: 85px; width: 600px;">
+            <h2 style="position:absolute; top:615px; left: 85px;"> Neue Austellung: Monekulare Tiefenkriterein</h2>
+            <span style="position:absolute; top:660px; left: 85px;">Ab heute startet die neue Austellung zu dne monekularen Tiefenrkiteren. Wer schon immer wissen wollte. wie das 3D sehen in </span>
+        </div>
+        <div class="scene" id="museum" data-0="transform:translate3d(100%,0%,0); opacity:0" data-1000="transform:translate3d(0,0%,0); opacity:1" data-2000="transform:translate3d(-100%,0%,0); opacity:0">
+            <img src="img/street.jpg" style="position: relative;">
+            <img src="img/museum.jpg" style="position:absolute; top:350px; left: 125px; width: 600px;">
         </div>
 
-        <div class="bg" style="background-image: url(img/2168.jpg);" id="slide-2" data-0="transform:translate3d(100%,0%,0); opacity:0" data-1000="transform:translate3d(0%,0%,0);opacity:1" data-2000="transform:translate3d(-100%,0%,0);opacity:0">
-            <img src="img/verdeckung.png" style="position: relative; top: 100px; left: 810px;">
-        </div>
 
-        <div class="bg" style="background-image: url(img/1813.jpg);" id="slide-3" data-1000="transform:translate3d(100%,0%,0); opacity:0" data-2000="transform:translate3d(0%,0%,0); opacity:1" data-3000="transform:translate3d(-100%,0%,0);opacity:0">
-        </div>
-        <!-- <div class="bg" style="background-color:blue" data-2000="transform:translate3d(100%,0%,0); opacity:0" data-3000="transform:translate3d(0%,0%,0); opacity:1">
-            <h2>Quellen</h2>
-            <a href='https://www.freepik.com/vectors/people'>People vector created by prostockstudio - www.freepik.com</a> https://keithclark.co.uk/articles/practical-css-parallax/horizontal-scroll/#slide-6
-
-        </div> -->
     </div>
 
     <footer>
-        <nav>
-            <ul class="nav">
-                <li><a href="#slide-1">Slide 1</a></li>
-                <li><a href="#slide-2">Slide 2</a></li>
-                <li><a href="#slide-3">Slide 3</a></li>
-                <li><a href="#slide-4">Slide 4</a></li>
-                <li><a href="#slide-5">Slide 5</a></li>
-                <li><a href="#slide-6">Slide 6</a></li>
-            </ul>
-        </nav>
     </footer>
 
     <script type="text/javascript">
@@ -59,13 +39,12 @@
             });
         });
 
-        function openDetail(image) {
-            document.getElementById("detailImage").src = image;
-            document.getElementById("myNav").style.width = "100%";
+        function openDetail(id) {
+            document.getElementById(id).style.width = "100%";
         }
 
-        function closeDetail() {
-            document.getElementById("myNav").style.width = "0%";
+        function closeDetail(id) {
+            document.getElementById(id).style.width = "0%";
         }
     </script>
 </body>
