@@ -1,91 +1,92 @@
-                header,
-            footer {
-                height: 100px;
-                text-align: center;
-            }
-            
-            html,
-            body {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .scene {
-                position: fixed;
-            }
-            
-            .scene>.bg_img {
-                width: 1000px;
-                height: 750px;
-            }
-            
-            .scene>.dt_img {
-                cursor: pointer;
-                position: absolute;
-            }
-            
-            .scroll {}
-            
-            .character {}
-            
-            .overlay {
-                height: 750px;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.9);
-                opacity: 1;
-                overflow: hidden;
-                transition: 0.5s;
-            }
-            
-            .overlay-content {
-                position: absolute;
-                top: 100px;
-                padding: 10px;
-                background-color: rgba(255, 255, 255, 0.9);
-            }
-            
-            .overlay a {
-                padding: 8px;
-                text-decoration: none;
-                font-size: 36px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-            }
-            
-            .overlay a:hover,
-            .overlay a:focus {
-                color: #f1f1f1;
-            }
-            
-            .overlay .closebtn {
-                position: absolute;
-                top: 20px;
-                right: 45px;
-                font-size: 60px;
-            }
-            
-            .grid_check {
-                width: 200px;
-                height: 100px;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-gap: 10px;
-                grid-auto-rows: minmax(100px, auto);
-            }
-            
-            .grid_check>img {
-                cursor: pointer;
-            }
-            
-            .correct {
-                border: 5px solid green;
-            }
-            
-            .wrong {
-                border: 5px solid red;
+header,
+footer {
+    height: 100px;
+    text-align: center;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.scene {
+    position: fixed;
+}
+
+.scene>.bg_img {
+    width: 1000px;
+    height: 750px;
+}
+
+.scene>.dt_img {
+    cursor: pointer;
+    position: absolute;
+}
+
+.scroll {}
+
+.character {}
+
+.overlay {
+    height: 750px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 100px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.grid_check {
+    width: 200px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid_check>img {
+    cursor: pointer;
+}
+
+.correct {
+    border: 5px solid green;
+}
+
+.wrong {
+    border: 5px solid red;
+}
