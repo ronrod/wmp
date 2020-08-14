@@ -13,17 +13,13 @@
 
 
     <div id="container">
-
-
         <div class="scene" style="background-image: url(img/newspaper_bg.jpg);" id="newspaper" data-0="transform:translate3d(0%,0%,0);" data-500="" data-1500="transform:translate3d(-100%,0,0);">
-            <h2 style="position: fixed; top:615px; left: 85px;"> Neue Austellung: Monekulare Tiefenkriterein</h2>
-            <span style="position:fixed; top:660px; left: 85px;text-overflow: ellipsis; overflow: hidden; width: 800px;white-space: nowrap;">Ab heute startet die neue Austellung zu den monekularen Tiefenkriteren. Wer schon immer wissen wollte. wie das 3D sehen in </span>
+            <h2 style="position: fixed; top:615px; left: 85px;"> Neue Austellung: Monokulare Tiefenkriterein</h2>
+            <span style="position:fixed; top:660px; left: 85px;text-overflow: ellipsis; overflow: hidden; width: 800px;white-space: nowrap;">Ab heute startet die neue Austellung zu den monokularen Tiefenkriteren. Wer schon immer wissen wollte. wie das 3D sehen in </span>
         </div>
         <div class="scene" style="background-image: url(img/street.jpg);" data-500="transform:translate3d(100%,0%,0); opacity:0" data-1500="transform:translate3d(0%,0%,0); opacity:1;" data-2000="" data-3000="transform:translate3d(-100%,0%,0);">
-            <!-- <img src="img/car_front.png" data-1500="position:absolute;opacity:1; left:450px; top:450px; height:50px;" data-2000="top:700px; height:250px; left:140px"> -->
         </div>
         <div class="scene" style="background-image: url(img/train_entrance.jpg);" data-0="opacity:0" data-2000="transform:translate3d(100%,0%,0);" data-3000="transform:translate3d(0%,0%,0);opacity:1;" data-3500="" data-4500="transform:translate3d(-100%,0%,0);">
-            <!-- <img src="img/queue.png" style="position:absolute; bottom:0px; left: 400px; height: 400px;" /> -->
         </div>
         <div class="scene" style="background-image: url(img/train_station.jpg);" data-0="opacity:0" data-3500="transform:translate3d(100%,0%,0);" data-4500="transform:translate3d(0%,0%,0);opacity:1;" data-5000="" data-6000="transform:translate3d(-100%,0%,0);">
         </div>
@@ -33,124 +29,216 @@
         </div>
         <div class="scene" style="background-image: url(img/museum.jpg);" data-0="opacity:0" data-6500="transform:translate3d(100%,0%,0);" data-7500="transform:translate3d(0%,0%,0);opacity:1;" data-8000="" data-9000="transform:translate3d(-100%,0%,0);">
         </div>
-        <div class="scroll">
+        <div class="scene" style="background-image: url(img/museum_entrance.jpg);" data-0="opacity:0" data-8000="transform:translate3d(100%,0%,0);" data-9000="transform:translate3d(0%,0%,0);opacity:1;" data-9500="" data-10500="transform:translate3d(-100%,0%,0);">
+        </div>
 
+        <div class="scene" style="background-image: url(img/big_frame.jpg);" data-0="opacity:0" data-9500="transform:translate3d(100%,0%,0);" data-10500="transform:translate3d(0%,0,0); opacity:1" data-11000="" data-12000="transform:translate3d(-100%,0%,0); opacity:0">
+            <img src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" class="dt_img" style="top: 185px; left: 300px; width:420px;" onclick="openDetail('bewegung')">
+        </div>
+
+        <div class="scene" style="background-image: url(img/three_frame_quad.jpg);" data-0="opacity:0" data-11000="transform:translate3d(100%,0%,0);" data-12000="transform:translate3d(0%,0,0); opacity:1" data-125000="" data-13500="transform:translate3d(-100%,0%,0); opacity:0">
+            <img src="img/realtive-groesse.jpg" alt="relative_groesse" class="dt_img" style="top: 260px; left: 55px; width:250px;" onclick="openDetail('rel_gro')">
+            <img src="img/relative-hoehe.jpg" class="dt_img" style="top: 260px; left: 375px; width:250px;" onclick="openDetail('rel_hoehe') ">
+            <img src="img/vertraute-groesse.jpg" class="dt_img" style="top: 260px; left: 700px; width:250px;" onclick="openDetail('ver_groesse') ">
+        </div>
+        <div class="scene" style="background-image: url(img/two_frames.jpg);" data-0="opacity:0" data-12500="transform:translate3d(100%,0%,0);" data-13500="transform:translate3d(0%,0,0); opacity:1" data-14000="" data-15000="transform:translate3d(-100%,0%,0); opacity:0">
+            <img src="img/texturdichte.png" class="dt_img" style="top: 275px; left: 277px; width:170px;" onclick="openDetail('texturdichte')">
+            <img src="img/perspektivische-konvergenz.jpg" class="dt_img" style="top: 275px; left: 550px; width:170px;" onclick="openDetail('pers_konv')">
+        </div>
+        <div class="scene" style="background-image: url(img/bilderrahmen3.png);" data-0="opacity:0" data-14000="transform:translate3d(100%,0%,0);" data-15000="transform:translate3d(0%,0,0); opacity:1" data-15500="" data-16500="transform:translate3d(-100%,0%,0); opacity:0">
+            <img src="img/verdeckung-ueberlappung.png" class="dt_img" style="top: 225px; left: 35px; width:250px;" onclick="openDetail('ver_ueber') ">
+            <img src="img/schatten.png" class="dt_img" style="top: 225px; left: 375px; width:250px;" onclick="openDetail('schatten') ">
+            <img src="img/atomsphaerische-perspektive.png" class="dt_img" style="top: 225px; left: 720px; width:250px;" onclick="openDetail('atmo_pers') ">
+        </div>
+        <div class="scene" style="background-image: url(img/end.jpg);" data-0="opacity:0" data-15500="transform:translate3d(100%,0%,0);" data-16500="transform:translate3d(0%,0,0); opacity:1" data-17000="" data-18000="transform:translate3d(-100%,0%,0); opacity:0">
+            <a style="position: absolute; color: white; top: 450px; left:450px;" href="ausarbeitung_monokular.pdf">Ausarbeitung</a>
+
+        </div>
+        <div class="scroll">
             <img src="img/museum.jpg" data-0="position:absolute; top:300px; left: 85px; width: 600px; display:inline" data-500="" data-1500="top:380px; left: 420px; width: 120px;" data-2000="display:none">
             <img src="img/car_side.png" data-0="position:absolute; display:none" data-1600="display:inline; left:-20px; top:440px; height:140px;" data-2200="left:800px;display:none">
-
-            <img src="img/character_anim.png" data-0="position:absolute; top:325px; left: 700px; width: 100px;opacity:1" data-500="" data-1500="top:420px; left: 150px; width: 60px;" data-2700="top:420px;" data-2900="top:530px; left: 150px; width:40px" data-3200=""
-                data-3300="left: 480px;" data-3500="opacity:0" data-4400="top:200px; left:120px; width:100px" data-4500="opacity:1;" data-4950="" data-5050="opacity:0" data-6000="top:280px; left:500px; width:120px;" data-6050="opacity:1" data-7400="" data-7500="top:500px; left:500px;width:40px">
+            <img src="img/character_anim.png" data-0="position:absolute; top:325px; left: 700px; width: 100px;opacity:1" data-500="" data-1500="top:440px; left: 150px; width: 60px;" data-2700="top:440px;" data-2900="top:550px; left: 150px; width:40px" data-3200=""
+                data-3300="left: 480px;" data-3500="opacity:0" data-4400="top:200px; left:120px; width:100px" data-4500="opacity:1;" data-4950="" data-5050="opacity:0" data-6000="top:280px; left:500px; width:120px;" data-6050="opacity:1" data-6800="" data-7000="top:625px; width:40px"
+                data-7400="" data-7500="top:515px; width:30px; display:inline" data-8000="display:none;">
+            <img src="img/character_anim.png" data-0="position:absolute; opacity:0;" data-9000="" data-9300="opacity:1; width:100px; top:400px; left:100px;">
 
             <p class="speech-bubble" data-0="position:absolute; top:360px; left: 675px; width: 100px;;display:inline" data-500="display:none;">Das hört sich aber interessant an. Dort möchte ich hin</p>
-            <p class="speech-bubble" data-0="display:none" data-1500="position:absolute; top:430px; left: 110px; width: 200px;display:inline" data-2000="display:none;">Da hinten in der Ferne ist das Museum. Nun schnell zum Bahnhof.</p>
-            <p class="speech-bubble" data-0="display:none" data-2900="position:absolute; top:530px; left: 100px; width: 200px;display:inline" data-3200="display:none;">Oh nein, was für eine Schlange. Ich kann die Ersten kaum erkennen</p>
+            <p class="speech-bubble" data-0="display:none" data-1500="position:absolute; top:450px; left: 105px; width: 200px;display:inline" data-2000="display:none;">Da hinten in der Ferne ist das Museum. Nun schnell zum Bahnhof.</p>
+            <p class="speech-bubble" data-0="display:none" data-2900="position:absolute; top:550px; left: 100px; width: 200px;display:inline" data-3200="display:none;">Oh nein, was für eine Schlange. Ich kann die Ersten kaum erkennen</p>
             <p class="speech-bubble" data-0="display:none" data-4500="position:absolute; top:250px; left: 100px; width: 200px;display:inline" data-5000="display:none;">Mein Zug ist gerade weg. Muss ich wohl auf den nächsten warten</p>
             <p class="speech-bubble" data-0="display:none" data-6000="position:absolute; top:330px; left: 480px; width: 200px;display:inline" data-6500="display:none;">Was für eine Aussicht</p>
-            <p class="speech-bubble" data-0="display:none" data-7500="position:absolute; top:330px; left: 480px; width: 200px;display:inline" data-8000="display:none;">Endlich angekommen</p>
+            <p class="speech-bubble" data-0="display:none" data-7500="position:absolute; top:515px; left: 445px; width: 200px;display:inline" data-8000="display:none;">Endlich angekommen</p>
         </div>
-
-        <div class="scene" style="background-image: url(img/big_frame.jpg);" data-0="opacity:0" data-8000="transform:translate3d(100%,0%,0);" data-9000="transform:translate3d(0%,0,0); opacity:1" data-9500="" data-10500="transform:translate3d(-100%,0%,0); opacity:0">
-            <img src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" class="dt_img" style="top: 185px; left: 300px; width:420px;" onclick="openDetail('bewegung')">
-            <div id="bewegung" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('bewegung')">&times;</a>
-                <div class="overlay-content">
-                    <h2>Bewegungsparallaxe</h2>
-                    <img src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="height: 300px;">
-                    <p>Sind mehrere Objekte in unterschiedlichen Ebenen angeordnet, wobei ein Horizont oder Fixierpunkt gegeben ist, so scheinen sich die Objekte bei Bewegung des Betrachtenden unterschiedlich zu bewegen. Weiter entfernte Objekte (die im
-                        Hintergrund angeordnet sind) bewegen sich dabei langsamer und mit Blickrichtung, näher liegende Objekte bewegen sich schneller und entgegengesetzt der Blickrichtung. Dies hat eine starke Tiefenwirksamkeit zur Folge. Uneinig ist
-                        man bzgl. dieses Kriteriums, ob es zu den monokularen Tiefenkriterien gehört da der Effekt auch beim Sehen mit einem Auge auftritt oder ob es ausschließlich zu den bewegungsinduzierten Tiefenkriterien gehört, da sich Betrachtende
-                        bewegen müssen, um die Wirkung zu erfahren.</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="scene" style="background-image: url(img/three_frame_quad.jpg);" data-0="opacity:0" data-9500="transform:translate3d(100%,0%,0);" data-10500="transform:translate3d(0%,0,0); opacity:1" data-11000="" data-12000="transform:translate3d(-100%,0%,0); opacity:0">
-            <img src="img/realtive-groesse.jpg" alt="relative_groesse" class="dt_img" style="top: 200px; left: 55px; width:250px;" onclick="openDetail('rel_gro')">
-            <div id="rel_gro" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('rel_gro')">&times;</a>
-                <div class="overlay-content">
-                    <h2>Relative Größe</h2>
-                    <img src="img/realtive-groesse.jpg" alt="relative_groesse" style="height: 300px;">
-                    <p>Menschen wissen aus ihrer Erfahrung und ihrem semantischen Gedächtnis heraus, welche Objekte eine bestimmte Größe aufweisen und können die größenbedingten Relationen verschiedener Objekte miteinander vergleichen und Schlüsse daraus
-                        ziehen. Beispielsweise wissen wir, dass ein Stuhl im Normalfall kleiner als ein Tisch ist. Nehmen wir den Stuhl jedoch größer wahr, so ist uns bewusst, dass der Tisch weiter entfernt stehen muss.</p>
-
-                </div>
-            </div>
-            <img src="img/relative-hoehe.jpg" class="dt_img" style="top: 200px; left: 375px; width:250px;" onclick="openDetail('rel_hoehe') ">
-            <div id="rel_hoehe" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('rel_hoehe')">&times;</a>
-                <div class="overlay-content">
-                    <h2>Relative Höhe</h2>
-                    <img src="img/relative-hoehe.jpg" style="height: 300px;">
-                    <p>Objekte, die weiter oben angeordnet sind, erscheinen (ohne horizontale Orientierungsmöglichkeit) weiter entfernt vom Betrachtenden als gleich groß abgebildete Objekte, die weiter unten angeordnet sind. Ist jedoch ein Horizont erkennbar,
-                        so kehrt sich diese Wahrnehmung um. Nun erscheinen diejenigen Objekte weiter entfernt und größer, die sich näher am Horizont befinden.</p>
-
-                </div>
-            </div>
-            <img src="img/vertraute-groesse.jpg" class="dt_img" style="top: 200px; left: 700px; width:250px;" onclick="openDetail('ver_groesse') ">
-            <div id="ver_groesse" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('ver_groesse') ">&times;</a>
-                <div class="overlay-content">
-                    <h2>Vertraute Größe</h2>
-                    <img src="img/vertraute-groesse.jpg" style="height: 300px;">
-                    <p>Ähnlich verhält es sich bei einzelnen Objekten ohne Vergleichsmöglichkeit. Die ungefähre Größe eines Menschen ist uns allgemein bekannt, daher können wir einschätzen, wo genau im Raum er sich befindet, je nachdem wie groß er von uns
-                        wahrgenommen wird.
-                    </p>
+        <div id="bewegung" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('bewegung')">&times;</a>
+            <div class="overlay-content">
+                <h2>Bewegungsparallaxe</h2>
+                <img src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="height: 300px; float:left; padding:10px;">
+                <p>Sind mehrere Objekte in unterschiedlichen Ebenen angeordnet, wobei ein Horizont oder Fixierpunkt gegeben ist, so scheinen sich die Objekte bei Bewegung des Betrachtenden unterschiedlich zu bewegen. Weiter entfernte Objekte (die im Hintergrund
+                    angeordnet sind) bewegen sich dabei langsamer und mit Blickrichtung, näher liegende Objekte bewegen sich schneller und entgegengesetzt der Blickrichtung. Dies hat eine starke Tiefenwirksamkeit zur Folge. Uneinig ist man bzgl. dieses
+                    Kriteriums, ob es zu den monokularen Tiefenkriterien gehört da der Effekt auch beim Sehen mit einem Auge auftritt oder ob es ausschließlich zu den bewegungsinduzierten Tiefenkriterien gehört, da sich Betrachtende bewegen müssen, um
+                    die Wirkung zu erfahren.
+                </p>
+                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <div class="grid_check">
+                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
                 </div>
             </div>
         </div>
-        <div class="scene" style="background-image: url(img/two_frames.jpg);" data-0="opacity:0" data-11000="transform:translate3d(100%,0%,0);" data-12000="transform:translate3d(0%,0,0); opacity:1" data-125000="" data-13500="transform:translate3d(-100%,0%,0); opacity:0">
-            <img src="img/texturdichte.jpg" class="dt_img" style="top: 300px; left: 277px; width:170px;" onclick="openDetail('texturdichte') ">
-            <div id="texturdichte" class="overlay ">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('texturdichte') ">&times;</a>
-                <div class="overlay-content">
-                    <h2>Texturdichte</h2>
-                    <img src="img/texturdichte.jpg" style="height: 300px;">
-                    <p>Erscheint eine Textur eines Objekts bei frontalem Blick gleichmäßig und parallel, so ändert sich dies, wenn man aus einem anderen Winkel auf das Objekt schaut. Laufen vertikale Linien nun mit steigender Entfernung zusammen (siehe perspektivische
-                        Konvergenz), so erscheinen horizontale Linien als enger aneinander liegend, wenn sie sich nahe dem Horizont befinden. Im zweidimensionalen Raum nimmt man dadurch eine Veränderung der Textur wahr, obwohl sich die horizontalen Linien
-                        eigentlich im gleichen Abstand zum Betrachtenden befinden.</p>
-
+        <div id="rel_gro" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('rel_gro')">&times;</a>
+            <div class="overlay-content">
+                <h2>Relative Größe</h2>
+                <img src="img/realtive-groesse.jpg" alt="relative_groesse" style="height: 300px; float:left; padding:10px;">
+                <p>Menschen wissen aus ihrer Erfahrung und ihrem semantischen Gedächtnis heraus, welche Objekte eine bestimmte Größe aufweisen und können die größenbedingten Relationen verschiedener Objekte miteinander vergleichen und Schlüsse daraus ziehen.
+                    Beispielsweise wissen wir, dass ein Stuhl im Normalfall kleiner als ein Tisch ist. Nehmen wir den Stuhl jedoch größer wahr, so ist uns bewusst, dass der Tisch weiter entfernt stehen muss.</p>
+                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <div class="grid_check">
+                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
                 </div>
+
             </div>
-            <img src="img/schatten.png" class="dt_img" style="top: 300px; left: 550px; width:170px;" onclick="openDetail('schatten') ">
-            <div id="schatten" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('schatten') ">&times;</a>
-                <div class="overlay-content">
-                    <h2>Schatten</h2>
-                    <img src="img/schatten.jpg" style="height: 300px;">
-                    <p>Dreidimensionale Objekte werfen bei jeglichem Lichteinfall Schatten entsprechend ihrer Form und des Winkels, bzw. des Orts der Lichtquelle. Im zweidimensionalen Raum kann durch unterschiedliche Schattierung desselben Objekts eine unterschiedliche
-                        Wahrnehmung hervorgerufen werden. Je nach Größe und Platzierung des Schattens wird ein unterschiedlicher Lichteinfall simuliert und gegebenenfalls wirkt das zweidimensionale Objekt anders, in jedem Fall konstruieren wir jedoch
-                        eine dreidimensionale Wirkung.
-                    </p>
+        </div>
+        <div id="schatten" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('schatten') ">&times;</a>
+            <div class="overlay-content">
+                <h2>Schatten</h2>
+                <img src="img/schatten.png" style="height: 300px; float:left; padding:10px;">
+                <p>Dreidimensionale Objekte werfen bei jeglichem Lichteinfall Schatten entsprechend ihrer Form und des Winkels, bzw. des Orts der Lichtquelle. Im zweidimensionalen Raum kann durch unterschiedliche Schattierung desselben Objekts eine unterschiedliche
+                    Wahrnehmung hervorgerufen werden. Je nach Größe und Platzierung des Schattens wird ein unterschiedlicher Lichteinfall simuliert und gegebenenfalls wirkt das zweidimensionale Objekt anders, in jedem Fall konstruieren wir jedoch eine
+                    dreidimensionale Wirkung.
+                </p>
+                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <div class="grid_check">
+                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
                 </div>
             </div>
         </div>
-    </div>
+        <div id="texturdichte" class="overlay ">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('texturdichte') ">&times;</a>
+            <div class="overlay-content">
+                <h2>Texturdichte</h2>
+                <img src="img/texturdichte.png" style="height: 300px; float:left; padding:10px;">
+                <p>Erscheint eine Textur eines Objekts bei frontalem Blick gleichmäßig und parallel, so ändert sich dies, wenn man aus einem anderen Winkel auf das Objekt schaut. Laufen vertikale Linien nun mit steigender Entfernung zusammen (siehe perspektivische
+                    Konvergenz), so erscheinen horizontale Linien als enger aneinander liegend, wenn sie sich nahe dem Horizont befinden. Im zweidimensionalen Raum nimmt man dadurch eine Veränderung der Textur wahr, obwohl sich die horizontalen Linien
+                    eigentlich im gleichen Abstand zum Betrachtenden befinden.</p>
+                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <div class="grid_check">
+                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                </div>
 
-    <footer>
-    </footer>
+            </div>
+        </div>
+        <div id="ver_groesse" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('ver_groesse') ">&times;</a>
+            <div class="overlay-content">
+                <h2>Vertraute Größe</h2>
+                <img src="img/vertraute-groesse.jpg" style="height: 300px; float:left; padding:10px;">
+                <p>Ähnlich verhält es sich bei einzelnen Objekten ohne Vergleichsmöglichkeit. Die ungefähre Größe eines Menschen ist uns allgemein bekannt, daher können wir einschätzen, wo genau im Raum er sich befindet, je nachdem wie groß er von uns wahrgenommen
+                    wird.
+                </p>
+                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <div class="grid_check">
+                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                </div>
+            </div>
+        </div>
+        <div id="rel_hoehe" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('rel_hoehe')">&times;</a>
+            <div class="overlay-content">
+                <h2>Relative Höhe</h2>
+                <img src="img/relative-hoehe.jpg" style="height: 300px; float:left; padding:10px;">
+                <p>Objekte, die weiter oben angeordnet sind, erscheinen (ohne horizontale Orientierungsmöglichkeit) weiter entfernt vom Betrachtenden als gleich groß abgebildete Objekte, die weiter unten angeordnet sind. Ist jedoch ein Horizont erkennbar,
+                    so kehrt sich diese Wahrnehmung um. Nun erscheinen diejenigen Objekte weiter entfernt und größer, die sich näher am Horizont befinden.</p>
+                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <div class="grid_check">
+                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                </div>
+            </div>
+            <div id="ver_ueber" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('ver_ueber')">&times;</a>
+                <div class="overlay-content">
+                    <h2>Verdeckung und Überlappung</h2>
+                    <img src="img/verdeckung-ueberlappung.png" style="height: 300px; float:left; padding:10px;">
+                    <p>Wird ein Objekt von einem anderen ganz oder teilweise verdeckt, so nimmt man es als weiter entfernt wahr. Man spricht in diesem Fall auch von relativer Tiefe, da es scheint, als würden sich die Objekte in unterschiedlicher Entfernung
+                        zum Betrachter befinden.</p>
+                    <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                    <div class="grid_check">
+                        <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                        <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                        <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    </div>
+                </div>
+            </div>
+            <div id="atmo_pers" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('atmo_pers')">&times;</a>
+                <div class="overlay-content">
+                    <h2>Atmosphärische Perspektive</h2>
+                    <img src="img/atomsphaerische-perspektive.png" style="height: 300px; float:left; padding:10px;">
+                    <p>Aufgrund mehrerer atmosphärischer Eigenschaften wie etwa Nebel, Luftpartikel, Verschmutzungen oder Wassertropfen wird die Lichtreflexion weiter entfernter Objekte stärker gebrochen als bei Objekten die sich näher beim Betrachtenden
+                        befinden. Dadurch erscheinen sie kontrastärmer, unschärfer und meist heller. Diese Erfahrung hat nicht selten zur Folge, dass man sich leicht verschätzt, wenn die eigentlich erwartete atmosphärische Veränderung nicht auftritt,
+                        etwa wenn man in den Bergen Entfernungen abschätzt, wo die Luft deutlich reiner und weniger partikelreich ist wie in Großstädten.</p>
+                    <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                    <div class="grid_check">
+                        <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                        <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                        <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    </div>
+                </div>
+            </div>
+            <div id="pers_konv" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeDetail('pers_konv')">&times;</a>
+                <div class="overlay-content">
+                    <h2>Perspektivische Konvergenz</h2>
+                    <img src="img/perspektivische-konvergenz.jpg" style="height: 300px; float:left; padding:10px;">
+                    <p>Verlaufen zwei Linien parallel ergibt sich bei zunehmender Nähe zum Horizont hin der Eisenbahnschienen-Effekt. Die beiden Linien scheinen zu einem Fluchtpunkt zusammen zu laufen und zu konvergieren, eine Straße wird schmaler wahrgenommen
+                        je mehr sie sich dem Horizont nähert.</p>
+                    <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                    <div class="grid_check">
+                        <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                        <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                        <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script type="text/javascript ">
-        $(document).ready(function() {
-            skrollr.init({
-                smoothScrolling: true,
-                scale: 2,
-                easing: "swing "
+        <footer>
+        </footer>
+
+        <script type="text/javascript ">
+            $(document).ready(function() {
+                skrollr.init({
+                    smoothScrolling: true,
+                    scale: 2,
+                    easing: "swing "
+                });
             });
-        });
 
-        function openDetail(id) {
-            document.getElementById(id).style.width = "1000px ";
-        }
+            function openDetail(id) {
+                document.getElementById(id).style.width = "1000px ";
+            }
 
-        function closeDetail(id) {
-            document.getElementById(id).style.width = "0 ";
-        }
+            function closeDetail(id) {
+                document.getElementById(id).style.width = "0 ";
+            }
 
-        function addClass(id, name) {
-            document.getElementById(id).classList.add(name);
-        }
-    </script>
+            function addClass(id, name) {
+                document.getElementById(id).classList.add(name);
+            }
+        </script>
 </body>
 
 </html>
