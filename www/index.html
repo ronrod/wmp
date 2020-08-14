@@ -18,6 +18,8 @@
             <span style="position:fixed; top:660px; left: 85px;text-overflow: ellipsis; overflow: hidden; width: 800px;white-space: nowrap;">Ab heute startet die neue Austellung zu den monokularen Tiefenkriteren. Wer schon immer wissen wollte. wie das 3D sehen in </span>
         </div>
         <div class="scene" style="background-image: url(img/street.jpg);" data-500="transform:translate3d(100%,0%,0); opacity:0" data-1500="transform:translate3d(0%,0%,0); opacity:1;" data-2000="" data-3000="transform:translate3d(-100%,0%,0);">
+            <img src="img/car_side.png" data-0="position:absolute; display:none" data-1600="display:inline; left:-20px; top:440px; height:140px;" data-2200="left:800px;display:none">
+            <img src="img/lamp.png" style="z-index: 5; position: absolute; height: 750px; width:1000px;">
         </div>
         <div class="scene" style="background-image: url(img/train_entrance.jpg);" data-0="opacity:0" data-2000="transform:translate3d(100%,0%,0);" data-3000="transform:translate3d(0%,0%,0);opacity:1;" data-3500="" data-4500="transform:translate3d(-100%,0%,0);">
         </div>
@@ -55,8 +57,8 @@
 
         </div>
         <div class="scroll">
-            <img src="img/museum.jpg" data-0="position:absolute; top:300px; left: 85px; width: 600px; display:inline" data-500="" data-1500="top:380px; left: 420px; width: 120px;" data-2000="display:none">
-            <img src="img/car_side.png" data-0="position:absolute; display:none" data-1600="display:inline; left:-20px; top:440px; height:140px;" data-2200="left:800px;display:none">
+            <img src="img/museum.jpg" data-0="position:absolute; top:300px; left: 85px; width: 600px; display:inline; z-index:0" data-500="" data-1500="top:380px; left: 420px; width: 120px;" data-2000="display:none">
+
             <img src="img/character_anim.png" data-0="position:absolute; top:325px; left: 700px; width: 100px;opacity:1" data-500="" data-1500="top:440px; left: 150px; width: 60px;" data-2700="top:440px;" data-2900="top:550px; left: 150px; width:40px" data-3200=""
                 data-3300="left: 480px;" data-3500="opacity:0" data-4400="top:200px; left:120px; width:100px" data-4500="opacity:1;" data-4950="" data-5050="opacity:0" data-6000="top:280px; left:500px; width:120px;" data-6050="opacity:1" data-6800="" data-7000="top:625px; width:40px"
                 data-7400="" data-7500="top:515px; width:30px; display:inline" data-8000="display:none;">
@@ -79,11 +81,11 @@
                     Kriteriums, ob es zu den monokularen Tiefenkriterien gehört da der Effekt auch beim Sehen mit einem Auge auftritt oder ob es ausschließlich zu den bewegungsinduzierten Tiefenkriterien gehört, da sich Betrachtende bewegen müssen, um
                     die Wirkung zu erfahren.
                 </p>
-                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                 <div class="grid_check">
-                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    <img id="ques_1_1" src="img/quest/bewegung.png" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/quest/textur.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/quest/schatten.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
                 </div>
             </div>
         </div>
@@ -94,11 +96,11 @@
                 <img src="img/realtive-groesse.jpg" alt="relative_groesse" style="height: 300px; float:left; padding:10px;">
                 <p>Menschen wissen aus ihrer Erfahrung und ihrem semantischen Gedächtnis heraus, welche Objekte eine bestimmte Größe aufweisen und können die größenbedingten Relationen verschiedener Objekte miteinander vergleichen und Schlüsse daraus ziehen.
                     Beispielsweise wissen wir, dass ein Stuhl im Normalfall kleiner als ein Tisch ist. Nehmen wir den Stuhl jedoch größer wahr, so ist uns bewusst, dass der Tisch weiter entfernt stehen muss.</p>
-                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                 <div class="grid_check">
-                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    <img id="ques_1_1" src="img/quest/groess.jpg" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
+                    <img id="ques_1_2" src="img/quest/schatten.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
+                    <img id="ques_1_3" src="img/quest/konvergenz.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
                 </div>
 
             </div>
@@ -112,11 +114,11 @@
                     Wahrnehmung hervorgerufen werden. Je nach Größe und Platzierung des Schattens wird ein unterschiedlicher Lichteinfall simuliert und gegebenenfalls wirkt das zweidimensionale Objekt anders, in jedem Fall konstruieren wir jedoch eine
                     dreidimensionale Wirkung.
                 </p>
-                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                 <div class="grid_check">
-                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    <img id="ques_2_1" src="img/quest/groess.png" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_2_1', 'wrong')">
+                    <img id="ques_2_2" src="img/quest/textur.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_2_2', 'wrong')">
+                    <img id="ques_2_3" src="img/quest/schatten.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_2_3', 'correct')">
                 </div>
             </div>
         </div>
@@ -128,11 +130,11 @@
                 <p>Erscheint eine Textur eines Objekts bei frontalem Blick gleichmäßig und parallel, so ändert sich dies, wenn man aus einem anderen Winkel auf das Objekt schaut. Laufen vertikale Linien nun mit steigender Entfernung zusammen (siehe perspektivische
                     Konvergenz), so erscheinen horizontale Linien als enger aneinander liegend, wenn sie sich nahe dem Horizont befinden. Im zweidimensionalen Raum nimmt man dadurch eine Veränderung der Textur wahr, obwohl sich die horizontalen Linien
                     eigentlich im gleichen Abstand zum Betrachtenden befinden.</p>
-                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                 <div class="grid_check">
-                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    <img id="ques_3_1" src="img/quest/bewegung.png" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_3_1', 'wrong')">
+                    <img id="ques_3_2" src="img/quest/textur.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_3_2', 'correct')">
+                    <img id="ques_3_3" src="img/quest/konvergenz.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_3_3', 'wrong')">
                 </div>
 
             </div>
@@ -145,11 +147,11 @@
                 <p>Ähnlich verhält es sich bei einzelnen Objekten ohne Vergleichsmöglichkeit. Die ungefähre Größe eines Menschen ist uns allgemein bekannt, daher können wir einschätzen, wo genau im Raum er sich befindet, je nachdem wie groß er von uns wahrgenommen
                     wird.
                 </p>
-                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                 <div class="grid_check">
-                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    <img id="ques_4_1" src="img/quest/vert_groess.png" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_4_1', 'correct')">
+                    <img id="ques_4_2" src="img/quest/bewegung.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_4_2', 'wrong')">
+                    <img id="ques_4_3" src="img/quest/textur.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_4_3', 'wrong')">
                 </div>
             </div>
         </div>
@@ -160,11 +162,11 @@
                 <img src="img/relative-hoehe.jpg" style="height: 300px; float:left; padding:10px;">
                 <p>Objekte, die weiter oben angeordnet sind, erscheinen (ohne horizontale Orientierungsmöglichkeit) weiter entfernt vom Betrachtenden als gleich groß abgebildete Objekte, die weiter unten angeordnet sind. Ist jedoch ein Horizont erkennbar,
                     so kehrt sich diese Wahrnehmung um. Nun erscheinen diejenigen Objekte weiter entfernt und größer, die sich näher am Horizont befinden.</p>
-                <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                 <div class="grid_check">
-                    <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                    <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                    <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                    <img id="ques_5_1" src="img/quest/textur.png" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_5_1', 'correct')">
+                    <img id="ques_5_2" src="img/quest/bewegung.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_5_2', 'wrong')">
+                    <img id="ques_5_3" src="img/quest/textur.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_5_3', 'wrong')">
                 </div>
             </div>
             <div id="ver_ueber" class="overlay">
@@ -174,11 +176,11 @@
                     <img src="img/verdeckung-ueberlappung.png" style="height: 300px; float:left; padding:10px;">
                     <p>Wird ein Objekt von einem anderen ganz oder teilweise verdeckt, so nimmt man es als weiter entfernt wahr. Man spricht in diesem Fall auch von relativer Tiefe, da es scheint, als würden sich die Objekte in unterschiedlicher Entfernung
                         zum Betrachter befinden.</p>
-                    <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                    <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                     <div class="grid_check">
-                        <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
-                        <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
-                        <img id="ques_1_3" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:3;" onclick="addClass('ques_1_3', 'wrong')">
+                        <img id="ques_6_1" src="img/quest/bewegung.png" alt="Antwort 1" style="grid-column:1;" onclick="addClass('ques_6_1', 'correct')">
+                        <img id="ques_6_2" src="img/quest/textur.png" alt="Antwort 2" style="grid-column:2;" onclick="addClass('ques_6_2', 'wrong')">
+                        <img id="ques_6_3" src="img/quest/schatten.png" alt="Antwort 3" style="grid-column:3;" onclick="addClass('ques_6_3', 'wrong')">
                     </div>
                 </div>
             </div>
@@ -190,7 +192,7 @@
                     <p>Aufgrund mehrerer atmosphärischer Eigenschaften wie etwa Nebel, Luftpartikel, Verschmutzungen oder Wassertropfen wird die Lichtreflexion weiter entfernter Objekte stärker gebrochen als bei Objekten die sich näher beim Betrachtenden
                         befinden. Dadurch erscheinen sie kontrastärmer, unschärfer und meist heller. Diese Erfahrung hat nicht selten zur Folge, dass man sich leicht verschätzt, wenn die eigentlich erwartete atmosphärische Veränderung nicht auftritt,
                         etwa wenn man in den Bergen Entfernungen abschätzt, wo die Luft deutlich reiner und weniger partikelreich ist wie in Großstädten.</p>
-                    <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                    <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                     <div class="grid_check">
                         <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
                         <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
@@ -205,7 +207,7 @@
                     <img src="img/perspektivische-konvergenz.jpg" style="height: 300px; float:left; padding:10px;">
                     <p>Verlaufen zwei Linien parallel ergibt sich bei zunehmender Nähe zum Horizont hin der Eisenbahnschienen-Effekt. Die beiden Linien scheinen zu einem Fluchtpunkt zusammen zu laufen und zu konvergieren, eine Straße wird schmaler wahrgenommen
                         je mehr sie sich dem Horizont nähert.</p>
-                    <h3 style="clear:both">Wenn du Aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
+                    <h3 style="clear:both">Wenn du aufmerksam warst, ist dir dieses Kriterium bereits begegnet. Wähle aus:</h3>
                     <div class="grid_check">
                         <img id="ques_1_1" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:1;" onclick="addClass('ques_1_1', 'correct')">
                         <img id="ques_1_2" src="img/bewegungsparallaxe.jpg" alt="bewegungsparallaxe" style="grid-column:2;" onclick="addClass('ques_1_2', 'wrong')">
