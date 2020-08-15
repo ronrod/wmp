@@ -14,10 +14,19 @@ body {
 .scene {
     position: fixed;
     width: 1000px;
-    height: 750px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: 1000px 750px;
     opacity: 1;
+}
+
+.scene>.source {
+    position: Fixed;
+    font-size: 10px;
+    bottom: 15px;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
 }
 
 .scene>.dt_img {
