@@ -4,14 +4,13 @@
 <head>
     <title>3D-Webseite durch monokulare Tiefenkriterien</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/jquery.min.js.Download"></script>
-    <script src="./js/skrollr.min.js.Download"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/skrollr.min.js"></script>
+    <script src="./js/skrollr.menu.min.js"></script>
     <meta charset="UTF-8">
 </head>
 
 <body>
-
-
     <div id="container">
         <div class="scene" style="background-image: url(img/newspaper_bg.jpg);" id="newspaper" data-0="transform:translate3d(0%,0%,0);" data-500="" data-1500="transform:translate3d(-100%,0,0);">
             <h2 style="position: fixed; top:615px; left: 85px;"> Neue Austellung: Monokulare Tiefenkriterein</h2>
@@ -222,12 +221,9 @@
             </div>
         </div>
 
-        <footer>
-        </footer>
-
         <script type="text/javascript ">
             $(document).ready(function() {
-                skrollr.init({
+                var s = skrollr.init({
                     smoothScrolling: true,
                     scale: 2,
                     easing: "swing "
@@ -235,7 +231,7 @@
             });
 
             function openDetail(id) {
-                document.getElementById(id).style.width = "1000px ";
+                document.getElementById(id).style.width = "1000px";
             }
 
             function closeDetail(id) {
